@@ -1,0 +1,15 @@
+{
+  "name": "FlagToFleg",
+  "version": "1",
+  "description": "Replaces flag to fleg.",
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Fleg",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "fleg.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
