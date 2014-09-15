@@ -6,10 +6,11 @@
   "browser_action": {
     "name": "Fleg",
     "icons": ["icon.png"],
-    "default_icon": "icon.png"
+    "default_icon": "icon.png",
+    "default_popup": "browseraction/popup.html"
   },
   "content_scripts": [ {
-    "js": [ "jquery.min.js", "fleg.js" ],
+    "js": [ "jquery.min.js", "background.js" ],
     "matches": [ "http://*/*", "https://*/*"]
   }]
 }
